@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My 1st Animation Project</title>
+
+    <style type="text/css">
+        #div {
+            border: 2px solid green;
+            width: 25px;
+            height: 20px;
+            background-color: green;
+            padding: 10px;
+            margin: auto;
+            /* Safari 4.0 - 8.0 */
+            /*-webkit-animation-name: mybox;
+            -webkit-animation-duration: 4s;
+            animation-name: mybox;
+            animation-duration: 4s;
+            animation-iteration-count: 3;*/
+        }
+        
+        div:hover {
+            -webkit-animation-name: mybox;
+            -webkit-animation-duration: 4s;
+            animation-name: mybox;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+        /* Safari 4.0 - 8.0 */
+        
+        @-webkit-keyframes mybox {
+            from {
+                background-color: green;
+            }
+            to {
+                border: 2px solid orange;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+        /* Standard syntax */
+        
+        @keyframes mybox {
+            from {
+                background-color: green;
+            }
+            to {
+                border: 2px solid orange;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Hover Over Me!!
+        <p>
+            <div id="div">
+                <center> Box </center>
+            </div>
+</body>
+
+</html>
